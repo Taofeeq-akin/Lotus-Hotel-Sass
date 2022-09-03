@@ -1,0 +1,16 @@
+{
+  "name": "new-sass",
+  "version": "1.0.0",
+  "description": "Sass Practice",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Taofeeq Akin",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {}
+}

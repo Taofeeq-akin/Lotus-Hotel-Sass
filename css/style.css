@@ -1,0 +1,470 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInButtom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+/* Custom Fonts */
+@font-face {
+  font-family: Poppins-light;
+  src: url(/fonts/Montserrat-Light.ttf); }
+
+@font-face {
+  font-family: Poppins-medium;
+  src: url(/fonts/Montserrat-Medium.ttf); }
+
+@font-face {
+  font-family: Poppins-regular;
+  src: url(/fonts/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url(/fonts/Montserrat-Bold.ttf); }
+
+body {
+  font-family: Poppins-regular;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.7; }
+
+/* Headings */
+.heading-primary {
+  font-family: Poppins-bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500; }
+
+.icon {
+  font-size: 1.2rem;
+  padding: 0.2rem; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  align-items: center; }
+
+.dot-scroll {
+  display: flex;
+  gap: 1rem; }
+  .dot-scroll .dot {
+    background-color: #000;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%; }
+  .dot-scroll .dot-outline {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    border: 0.2rem solid #000; }
+
+.guest-text {
+  font-size: 1.2rem;
+  font-family: Poppins-medium;
+  margin-bottom: 2rem; }
+
+.view {
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent; }
+
+.right-bottom {
+  display: flex;
+  align-items: center; }
+  .right-bottom .checkmark {
+    font-size: 3.5rem;
+    padding-right: 1rem;
+    color: rgba(225, 190, 133, 0.918); }
+  .right-bottom p {
+    font-size: 2.2rem;
+    line-height: 1;
+    text-transform: uppercase; }
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+  margin-top: -3.4rem; }
+
+.u-centered-text {
+  text-align: center; }
+
+.u-margin-bottom {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.section-about {
+  padding: 2rem 20rem; }
+
+.section-features {
+  padding: 20rem 0;
+  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("/img/nat-4.jpg");
+  background-size: cover;
+  background-position: top; }
+
+.header {
+  height: 100vh;
+  background-image: url(/Images/header-img.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: #fff; }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    padding-left: 20rem;
+    padding-right: 20rem; }
+    .header-top :last-child {
+      text-transform: uppercase; }
+    .header-top div {
+      display: flex;
+      gap: 2rem;
+      font-size: 1rem;
+      align-items: center; }
+  .header-nav {
+    width: 100%;
+    padding: 1rem 20rem 1rem 20rem;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-nav .nav-logo img {
+      height: 4rem; }
+    .header-nav .nav-links {
+      display: flex;
+      gap: 2.3rem;
+      list-style: none;
+      justify-content: center;
+      align-items: center; }
+      .header-nav .nav-links .home {
+        padding: 2.2rem;
+        margin: -2rem 0;
+        background-color: #000;
+        text-transform: uppercase; }
+      .header-nav .nav-links .nav-link {
+        align-items: center;
+        text-align: center; }
+        .header-nav .nav-links .nav-link a {
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.15rem; }
+  .header-text {
+    text-align: center;
+    margin: 9.5rem 0 21.3rem 0;
+    line-height: 1.4; }
+    .header-text-sub1, .header-text-sub2 {
+      font-size: 2.2rem;
+      font-weight: 500; }
+    .header-text-sub2 {
+      animation-name: moveInButtom;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s; }
+    .header-text-sub1 {
+      animation-name: moveInTop;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s; }
+    .header-text .heading-text-main {
+      font-family: Poppins-light;
+      font-size: 6.7rem;
+      font-weight: 300;
+      padding: 0;
+      animation-name: moveInLeft;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s; }
+  .header-bottom {
+    background-color: rgba(0, 0, 0, 0.651);
+    padding: 0.5rem 20rem;
+    display: flex;
+    justify-content: space-between; }
+    .header-bottom-btns {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem; }
+      .header-bottom-btns .bottom-btn {
+        background-color: rgba(0, 0, 0, 0.062);
+        color: #fff;
+        display: flex;
+        gap: 1rem;
+        padding: 0.6rem;
+        font-size: 1.1rem;
+        border: solid #fff 1px;
+        align-items: center; }
+        .header-bottom-btns .bottom-btn .bottom-icon {
+          font-size: 2rem; }
+      .header-bottom-btns .first2 {
+        width: 13rem;
+        display: flex;
+        justify-content: space-between;
+        height: 3.6rem;
+        font-size: 1.2rem; }
+      .header-bottom-btns .second2 {
+        width: 8rem;
+        height: 3.6rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem; }
+      .header-bottom-btns .best-rate {
+        font-family: Poppins-medium;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        height: 3.6rem;
+        align-items: center;
+        padding: 0 1.5rem;
+        background-color: rgba(225, 190, 133, 0.918);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border: 2px transparent solid;
+        transition: all 0.3s; }
+        .header-bottom-btns .best-rate:hover {
+          background-color: #fff;
+          border: 2px rgba(225, 190, 133, 0.918) solid;
+          color: rgba(225, 190, 133, 0.918); }
+
+.row {
+  width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row [class^='col'] {
+    float: left; }
+    .row [class^='col']:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - (2 * 2rem)) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 2rem)/4); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - (2 * 2rem)) / 3) + 2rem); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - (3 * 2rem)) / 4) + 2rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - (3 * 2rem)) / 4) + 2 * 2rem); }
+
+.btn:hover, .btn:active {
+  background-color: rgba(225, 190, 133, 0.918);
+  color: #fff; }
+
+.accommodation {
+  padding: 3rem 20rem;
+  margin-top: -2.5rem;
+  background-color: #fff; }
+  .accommodation-sub-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem; }
+  .accommodation .rooms-div .room {
+    width: 30.5rem;
+    border: 1px solid #bdbdbd;
+    overflow: hidden; }
+    .accommodation .rooms-div .room .room-image {
+      width: 100%;
+      overflow: hidden; }
+      .accommodation .rooms-div .room .room-image img {
+        display: block;
+        transition: all 0.4s; }
+        .accommodation .rooms-div .room .room-image img:hover {
+          transform: scale(1.1); }
+    .accommodation .rooms-div .room .room-text {
+      padding: 1.5rem 1rem; }
+      .accommodation .rooms-div .room .room-text .sub-heading {
+        font-size: 2.2rem;
+        text-transform: uppercase; }
+      .accommodation .rooms-div .room .room-text :last-child {
+        font-size: 1.3rem; }
+    .accommodation .rooms-div .room .price {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #bdbdbd; }
+      .accommodation .rooms-div .room .price p {
+        width: 61%;
+        padding: 0 0.5rem;
+        border-right: 1px solid #bdbdbd;
+        color: rgba(225, 190, 133, 0.918);
+        font-size: 2.5rem; }
+        .accommodation .rooms-div .room .price p .days {
+          font-size: 1.2rem;
+          color: #bdbdbd; }
+
+.section-guest-book {
+  padding: 3rem 20rem; }
+  .section-guest-book .guest {
+    width: 42%; }
+    .section-guest-book .guest .guest-details {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      margin: 3.5rem 0; }
+      .section-guest-book .guest .guest-details img {
+        border-radius: 50%;
+        height: 10rem; }
+      .section-guest-book .guest .guest-details .guest-name {
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: Poppins-bold; }
+      .section-guest-book .guest .guest-details .guest-add {
+        color: #bdbdbd;
+        font-size: 1.2rem; }
+  .section-guest-book .envi-image div {
+    width: 45rem;
+    overflow: hidden; }
+  .section-guest-book .envi-image img {
+    width: 45rem;
+    margin-top: 2rem;
+    transition: all 0.4s; }
+    .section-guest-book .envi-image img:hover {
+      transform: scale(1.1); }
+
+.section-about .image2 {
+  width: 42%; }
+  .section-about .image2 img {
+    width: 100%; }
+
+.section-about .short-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 0; }
+
+.section-about .about-text {
+  width: 45rem; }
+
+.section-about .read {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 1rem; }
+  .section-about .read:hover {
+    background-color: rgba(225, 190, 133, 0.918);
+    color: #fff;
+    border-color: #fff; }
+
+.section-about .our-best .about-text {
+  width: 48rem; }
+
+.section-about .our-best .icons-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .section-about .our-best .icons-text .icon-text {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem; }
+    .section-about .our-best .icons-text .icon-text p {
+      font-family: Poppins-bold;
+      font-size: 1.1rem; }
+
+.section-about .our-best .envi-img img {
+  width: 80%; }
+
+.sign-up {
+  padding: 2rem 20rem;
+  background-color: #222222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .sign-up .social-icon-cont {
+    display: flex;
+    gap: 1rem;
+    align-items: center; }
+  .sign-up .social {
+    border: 2px #fff solid;
+    height: 3.2rem;
+    width: 3rem;
+    border-radius: 50%;
+    text-align: center; }
+    .sign-up .social .social-icon {
+      font-size: 1.5rem;
+      text-align: center; }
+  .sign-up input {
+    height: 4rem;
+    width: 25rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px #fff solid;
+    color: #fff;
+    margin-right: 1rem; }
+  .sign-up-btn {
+    height: 4rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background-color: rgba(225, 190, 133, 0.918);
+    color: #fff;
+    border: none;
+    cursor: pointer; }
+  .sign-up .email {
+    padding: 0.1rem 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid rgba(225, 190, 133, 0.918);
+    border-radius: 50%; }
+
+.footer {
+  padding: 4rem 20rem;
+  background-color: #2b2a2a;
+  display: flex;
+  gap: 2rem;
+  color: #bdbdbd;
+  align-items: center; }
+  .footer img {
+    height: 10rem;
+    margin-right: 2rem; }
+  .footer .footer-texts {
+    display: flex;
+    gap: 7rem;
+    align-items: center; }
+    .footer .footer-texts .footer-contact p {
+      font-size: 1.3rem;
+      margin: 0 2rem; }
+    .footer .footer-texts ul {
+      list-style: none; }
+      .footer .footer-texts ul li {
+        font-size: 1.3rem; }
+      .footer .footer-texts ul :first-child {
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: Poppins-bold; }

@@ -1,0 +1,49 @@
+.section-guest-book {
+    padding: $p-margin-bottom $padding-right;
+
+    .guest {
+        width: 42%;
+        .guest-details {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            margin: 3.5rem 0;
+    
+            img {
+                border-radius: 50%;
+                height: 10rem;
+            }
+    
+            .guest-name {
+                font-size: 1.5rem;
+                font-weight: 400;
+                font-family: Poppins-bold;
+            }
+    
+            .guest-add {
+                color: $color-grey-light;
+                font-size: 1.2rem;
+            }
+        }
+
+        
+    }
+
+    .envi-image {
+
+        div {
+            width: 45rem;
+            overflow: hidden;
+        }
+
+        img {
+            width: 45rem;
+            margin-top: $u-margin-bottom-small;
+            transition: all 0.4s;
+
+            &:hover {
+                transform:scale(1.1)
+            }
+        }
+    }
+}

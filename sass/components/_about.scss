@@ -1,0 +1,66 @@
+.section-about {
+    .image2 {
+        width: 42%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .short-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        line-height: 0;
+    }
+    
+    .about-text {
+        width: 45rem;
+        // overflow: hidden;
+    }
+
+    .read {
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: 1rem;
+
+        &:hover {
+            background-color: $color-btn;
+            color: $color-white;
+            border-color: $color-white;
+        }
+    }
+
+    .our-best {
+        .about-text {
+            width: 48rem;
+            // overflow: hidden;
+        }
+
+        .icons-text {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .icon-text {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+
+                p {
+                    font-family: Poppins-bold;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .envi-img {
+            img {
+                width: 80%;
+
+            }
+        }
+    }
+}

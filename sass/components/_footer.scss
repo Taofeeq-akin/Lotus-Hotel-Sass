@@ -1,0 +1,98 @@
+.sign-up {
+    padding: $u-margin-bottom-small $padding-left;
+    background-color: $color-grey-dark;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social-icon-cont {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .social {
+        border: 2px $color-white solid;
+        height: 3.2rem;
+        width: 3rem;
+        border-radius: 50%;
+        text-align: center;
+
+        .social-icon {
+            font-size: 1.5rem;
+            // padding: 0.5rem;
+            text-align: center;
+        }
+    }
+
+    input {
+        height: 4rem;
+        width: 25rem;
+        padding: 1rem;
+        background-color: transparent;
+        border: 2px $color-white solid;
+        color: $color-white;
+        margin-right: 1rem;
+    }
+
+    &-btn {
+        height: 4rem;
+        text-transform: uppercase;
+        padding: 1rem 1.5rem;
+        background-color: $color-btn;
+        color: $color-white;
+        border: none;
+        cursor: pointer;
+
+        // &:hover, &:active {
+        //     color: $color-btn;
+        // }
+    }
+
+    .email {
+        padding: 0.1rem 1.5rem;
+        margin-right: 1rem;
+        border: 2px solid $color-btn;
+        border-radius: 50%;
+    }
+}
+
+.footer {
+    padding: $u-margin-bottom-medium $padding-right;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    gap: 2rem;
+    color: $color-grey-light;
+    align-items: center;
+
+    img {
+        // padding-top: $u-margin-bottom-medium;
+        height: 10rem;
+        margin-right: 2rem;
+    }
+    .footer-texts {
+        display: flex;
+        gap: 7rem;
+        align-items: center;
+        .footer-contact {
+            p{
+                font-size: 1.3rem;
+                margin: 0 2rem;
+            }
+        }
+
+        ul {
+            list-style: none;
+            // margin-left: 4rem;
+            li {
+                font-size: 1.3rem;
+            }
+            :first-child {
+                font-size: 1.4rem;
+                font-weight: 400;
+                font-family: Poppins-bold;
+            }
+        }
+    }
+}

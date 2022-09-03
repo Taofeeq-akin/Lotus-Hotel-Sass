@@ -1,0 +1,15 @@
+.section-about{
+    padding: $u-margin-bottom-small $padding-left
+};
+
+.section-features {
+    padding: 20rem 0;
+  background: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url('/img/nat-4.jpg') /*center center/cover*/;
+  background-size: cover;
+  background-position: top;
+};
